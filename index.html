@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guilherme Pacheco | Game Developer Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-area">GP<span>.DEV</span></div>
+        <nav class="nav-links">
+            <a href="#home">OVERVIEW</a>
+            <a href="#dados">PROFILE</a>
+            <a href="#formacao">ACADEMIC</a>
+            <a href="#conhecimentos">TECH_STACK</a>
+            <a href="#experiencia">PORTFOLIO</a>
+            <a href="#habilidades">SKILLS</a>
+            <a href="#idiomas">LANGUAGES</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h1 class="gaming-title">GUILHERME PACHECO</h1>
+        <h2 class="subtitle">Gameplay Programmer & Interactive Systems Designer</h2>
+        <p>
+            Sou Guilherme Pacheco e busco me especializar em desenvolvimento de sistemas e soluções web, evoluindo
+            constantemente na área. Sou apaixonado por jogos, que me inspiram a criar e inovar em meus projetos. Em
+            alguns momentos, reduzo o escopo das ideias para garantir entregas no prazo. Isso pode limitar propostas
+            mais amplas, mas assegura maior objetividade. Essa postura reforça meu compromisso com resultados e o
+            trabalho em equipe.
+        </p>
+    </section>
+
+    <section id="dados">
+        <h1>DATA_PROFILE</h1>
+        <div class="dados-container">
+            <div class="foto-wrapper">
+                <img src="imagens/foto.png" alt="Guilherme Pacheco" class="foto-perfil">
+            </div>
+            <ul class="dados-lista">
+                <li><strong>NAME:</strong> Guilherme Pacheco</li>
+                <li><strong>BIRTH:</strong> 25/01/2007</li>
+                <li><strong>EMAIL:</strong> <a
+                        href="mailto:gp.pachecoguilherme@gmail.com">gp.pachecoguilherme@gmail.com</a></li>
+                <li><strong>PHONE:</strong> (41) 98507-6305</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="formacao">
+        <h1>ACADEMIC_PATH</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Ensino Médio Técnico Integrado em Programação de Jogos Digitais</h3>
+                <span class="instituicao">Instituto Federal do Paraná — Campus Curitiba (IFPR)</span>
+                <span class="periodo">2023 — 2026</span>
+            </div>
+            <div class="timeline-item">
+                <h3>Ensino Médio Regular</h3>
+                <span class="instituicao">Colégio Estadual do Paraná</span>
+                <span class="periodo">2022</span>
+            </div>
+            <div class="timeline-item">
+                <h3>Ensino Fundamental</h3>
+                <span class="instituicao">Unidade Polo — São José dos Pinhais</span>
+                <span class="periodo">2019 — 2021</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="conhecimentos">
+        <h1>TECH_STACK</h1>
+        <div class="grid-tech">
+            <div class="tech-card">
+                <h3>ENGINES</h3>
+                <p>Unity 2D & 3D</p>
+            </div>
+            <div class="tech-card">
+                <h3>LANGUAGES</h3>
+                <p>C# / C++ / C / JavaScript</p>
+            </div>
+            <div class="tech-card">
+                <h3>WEB CORE</h3>
+                <p>HTML5 / CSS3 (ES6+)</p>
+            </div>
+            <div class="tech-card">
+                <h3>ART PIPELINE</h3>
+                <p>Modelagem 3D, Assets, Pixel Art</p>
+            </div>
+            <div class="tech-card">
+                <h3>AUDIO</h3>
+                <p>Sound Design & Produção de Efeitos</p>
+            </div>
+            <div class="tech-card">
+                <h3>OFFICE</h3>
+                <p>Pacote Office Avançado & Planilhas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <h1>PORTFOLIO_PROJECTS</h1>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="navigateCarousel(-1)">❮</button>
+
+            <div class="carousel-window">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="UltraLab — Protocolo POCUS"
+                        data-img="imagens/tcc.png"
+                        data-desc="Mecânicas avançadas de gamificação aplicadas à área da saúde para simulações imersivas interativas de ultrassonografia médica."
+                        data-year="2026" data-subject="Trabalho de Conclusão de Curso (TCC)">
+                        <div class="projeto-img-container">
+                            <img src="imagens/tcc.png" alt="UltraLab" class="projeto-img">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>UltraLab — Protocolo POCUS</h3>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="Cenários Tridimensionais"
+                        data-img="imagens/modelagem.png"
+                        data-desc="Projeção de assets tridimensionais, blocagem de mapas estruturais (greyboxing), aplicação de texturas e iluminação em motores gráficos."
+                        data-year="2024" data-subject="Modelagem e Animação 3D">
+                        <div class="projeto-img-container">
+                            <img src="imagens/modelagem.png" alt="Modelagem 3D" class="projeto-img">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Cenários Tridimensionais</h3>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="Cabana do Mistério"
+                        data-img="imagens/cabana.png"
+                        data-desc="Estudo de identidade visual de interfaces para jogos. Criação de vetores gráficos, HUDs analógicas e digitais, focando na usabilidade (UI/UX)."
+                        data-year="2024" data-subject="Design de Interfaces e Vetorização">
+                        <div class="projeto-img-container">
+                            <img src="imagens/cabana.png" alt="Cabana do Mistério" class="projeto-img">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Cabana do Mistério</h3>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="Arte 2D & Pixel Art"
+                        data-img="imagens/2d.png"
+                        data-desc="Desenvolvimento de spritesheets otimizados para performance, concept arts de personagens e animações clássicas quadro a quadro para jogos retrô."
+                        data-year="2023" data-subject="Ilustração Digital e Pixel Art 2D">
+                        <div class="projeto-img-container dark-bg">
+                            <img src="imagens/2d.png" alt="Pixel Art" class="projeto-img projeto-img-pixel">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Arte 2D & Pixel Art</h3>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="Quarto do Andy — Toy Story VR"
+                        data-img="imagens/Vr.png"
+                        data-desc="Protótipo imersivo em Realidade Virtual (VR) recriando com alta fidelidade o quarto do Andy de Toy Story. Exploração em 360 graus, interações físicas com objetos e otimização de renderização para dispositivos de mapeamento imersivo."
+                        data-year="2024" data-subject="Desenvolvimento de Jogos e Realidade Virtual">
+                        <div class="projeto-img-container">
+                            <img src="imagens/Vr.png" alt="Quarto do Andy VR" class="projeto-img">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Quarto do Andy (VR)</h3>
+                        </div>
+                    </div>
+
+                    <div class="projeto-card" onclick="openModal(this)" data-title="Atari 2600 — Surround"
+                        data-img="imagens/surround.png"
+                        data-desc="O Surround foi lançado pela Atari em 1977 para o Atari Video Computer System, console que ficou conhecido como Atari 2600. Programado por Alan Miller, o jogo fez parte dos primeiros títulos que ajudaram a levar os videogames para dentro de casa."
+                        data-year="2026" data-subject="Desenvolvimento de Jogos Web"
+                        data-link="surround.html">
+
+                        <div class="projeto-img-container">
+                            <img src="imagens/surround.png" alt="Surround - Atari" class="projeto-img">
+                        </div>
+                        <div class="projeto-info">
+                            <h3>Atari 2600 - Surround</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next" onclick="navigateCarousel(1)">❯</button>
+        </div>
+
+        <h2 class="sub-secao-titulo">VIVÊNCIAS COMPLEMENTARES</h2>
+        <div class="experiencias-lista">
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Estágio na Procuradoria Geral do Município de Curitiba (PGM)</strong>
+                    <span class="badge-exp">ESTÁGIO</span>
+                </div>
+                <p>Atendimento ao público, organização de documentos, planilhas, arquivos e controle de materiais
+                    administrativos.</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Grupo de Teatro e Improvisação</strong>
+                    <span class="badge-exp">SOFT SKILLS</span>
+                </div>
+                <p>Desenvolvimento de comunicação interpessoal, criatividade, oratória e trabalho em equipe.</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Menção Honrosa - OBMEP</strong>
+                    <span class="badge-exp">HONORABLE MENTION</span>
+                </div>
+                <p>Destaque nacional em raciocínio lógico e resolução de problemas matemáticos.</p>
+            </div>
+            <div class="exp-item">
+                <div class="exp-header">
+                    <strong>Imersão IA & Coletivo Online</strong>
+                    <span class="badge-exp">AI WORKFLOW</span>
+                </div>
+                <p>Conhecimento e utilização da Inteligência Artificial Gemini para produtividade e aprendizado, aliado
+                    ao estudo sobre o mercado de trabalho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h1>CORE_COMPETENCIES</h1>
+        <div class="skills-flex">
+            <span class="skill-pill">Atendimento ao Público</span>
+            <span class="skill-pill">Responsabilidade</span>
+            <span class="skill-pill">Comprometimento</span>
+            <span class="skill-pill">Trabalho em Equipe</span>
+            <span class="skill-pill">Empatia e Maturidade</span>
+        </div>
+    </section>
+
+    <section id="idiomas">
+        <h1>LANGUAGES</h1>
+        <details>
+            <summary>PORTUGUÊS (NATIVE)</summary>
+            <p>Proficiência nativa completa.</p>
+        </details>
+        <details>
+            <summary>ENGLISH (BASIC)</summary>
+            <p>Nível básico voltado para compreensão de termos técnicos e documentações de código.</p>
+        </details>
+    </section>
+
+    <div id="projectModal" class="modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="modal-content">
+            <button class="modal-close-btn" onclick="closeModal()">✖</button>
+            <div class="modal-body">
+                <div class="modal-img-area" id="modalImgArea">
+                </div>
+                <div class="modal-info-area">
+                    <h2 id="modalTitle">Título</h2>
+                    <div class="modal-metadata">
+                        <p><strong>Ano de Execução:</strong> <span id="modalYear">0000</span></p>
+                        <p><strong>Disciplina / Contexto:</strong> <span id="modalSubject">Matéria</span></p>
+                    </div>
+                    <div class="modal-divider"></div>
+                    <p id="modalDescription">Descrição...</p>
+                    <a id="modalLink" class="modal-project-link" href="#" target="_blank" rel="noopener noreferrer" hidden>▶ JOGUE AGORA!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>// SYSTEMS OPERATIONAL. ARCHITECTURE PROCESSED BY GUILHERME PACHECO © 2026</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
